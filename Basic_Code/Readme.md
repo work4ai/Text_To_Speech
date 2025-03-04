@@ -34,6 +34,40 @@ gTTS supports multiple languages, including:
 - [Official Documentation](https://gtts.readthedocs.io/)
 - [GitHub Repository](https://github.com/pndurette/gTTS)
 
+# pyttsx3 - Text-to-Speech Conversion
+
+## Overview
+`pyttsx3` is a text-to-speech conversion library in Python that allows programs to read aloud text from a file or a string. Unlike other TTS libraries, `pyttsx3` works offline and supports multiple speech engines.
+
+## Features
+- Works offline (no internet required)
+- Supports multiple speech engines (SAPI5, NSSpeechSynthesizer, espeak)
+- Allows changing voice, rate, and volume
+- Cross-platform support (Windows, macOS, Linux)
+
+## Installation
+Install `pyttsx3` using pip:
+```sh
+pip install pyttsx3
+```
+
+```
+
+## Configuration
+You can modify speech properties such as:
+```python
+engine.setProperty('rate', 150)  # Speed of speech
+engine.setProperty('volume', 0.9)  # Volume level (0.0 to 1.0)
+voices = engine.getProperty('voices')
+engine.setProperty('voice', voices[0].id)  # Select voice
+```
+
+## Use Cases
+- Reading large text documents aloud
+- Assisting visually impaired users
+- Creating voice-enabled applications
+
+
 ## License
 This project is licensed under the MIT License.
 
