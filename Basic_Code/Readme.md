@@ -67,6 +67,26 @@ engine.setProperty('voice', voices[0].id)  # Select voice
 - Assisting visually impaired users
 - Creating voice-enabled applications
 
+# PyPDF2 - Read Text from PDF
+
+## Overview
+PyPDF2 is a Python library used for working with PDF files. It allows users to read, extract text, merge, split, and manipulate PDF documents. This project demonstrates using PyPDF2 to extract text from a PDF file and convert it into speech using a text-to-speech engine.
+
+## Features
+- Read and extract text from PDF files.
+- Handle multiple pages and retrieve content programmatically.
+- Supports text-to-speech integration with `pyttsx3`.
+
+## Installation
+Install PyPDF2 using pip:
+```sh
+pip install pypdf2
+```
+
+## Use Cases
+- Automating PDF text extraction.
+- Converting digital documents to speech.
+- Processing large volumes of PDF files for text analysis.
 
 ## License
 This project is licensed under the MIT License.
